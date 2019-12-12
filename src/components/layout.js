@@ -106,17 +106,13 @@ const Layout = ({ children, location }) => {
 
           <SkipToContent href="#content">Skip to Content</SkipToContent>
 
-          {isLoading ? (
-            <Loader finishLoading={() => setIsLoading(false)} />
-          ) : (
-            <StyledContent id="content">
-              <Nav location={location} />
-              <Social />
-              <Email />
-              {children}
-              <Footer githubInfo={githubInfo} />
-            </StyledContent>
-          )}
+          <StyledContent id="content">
+            <Nav location={location} />
+            <Social />
+            <Email />
+            {children}
+            <Footer githubInfo={githubInfo} />
+          </StyledContent>
         </div>
       )}
     />

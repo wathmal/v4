@@ -5,15 +5,17 @@ skills:
   - JavaScript (ES6+)
   - HTML & (S)CSS
   - React
-  - Vue
+  - Redux
   - Node.js
   - Express
-  - GraphQL
-  - NativeScript
+  - Docker
+  - AWS
 ---
 
-Hello! I'm Brittany, a software engineer based in Boston, MA who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.
+Hello! I'm Sasitha, a software engineer currently based in Colombo, Sri Lanka who enjoys building things that live on the internet. I develop web
+platforms, SPAs and APIs on multiple technology stacks.
 
-Shortly after graduating from [Northeastern University](https://www.ccis.northeastern.edu/), I joined the engineering team at [Upstatement](https://www.upstatement.com/) where I work on a wide variety of interesting and meaningful projects on a daily basis.
+Just after graduating from [University of Moratuwa](https://www.mrt.ac.lk/web/), I joined the engineering team at [Sysco Labs](https://syscolabs
+.lk/) where I work on a wide variety of interesting and challenging projects on a daily basis.
 
 Here are a few technologies I've been working with recently:

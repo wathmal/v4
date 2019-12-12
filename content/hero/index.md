@@ -1,8 +1,12 @@
 ---
 title: 'Hi, my name is'
-name: 'Brittany Chiang'
-subtitle: 'I build things for the web.'
+name: 'Sasitha Sonnadara'
+subtitle: 'I build things for your browser and bare-metal servers.'
 contactText: 'Get In Touch'
 ---
 
-I'm a software engineer based in Boston, MA specializing in building (and occasionally designing) exceptional, high-quality websites and applications.
+I'm a software engineer and a full-stack developer based in Colombo, Sri Lanka specializing in building and designing
+robust, scalable and modern
+web platforms.
+
+Currently, I'm looking for opportunities in Australia.

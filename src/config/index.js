@@ -1,38 +1,32 @@
 module.exports = {
-  siteTitle: 'Brittany Chiang | Software Engineer',
+  siteTitle: 'Sasitha Sonnadara | Software Engineer',
   siteDescription:
-    'Brittany Chiang is a software engineer based in Boston, MA who specializes in developing (and occasionally designing) exceptional, high-quality websites and applications.',
+    'Sasitha Sonnadara is a software engineer and a full-stack developer based in Colombo, Sri Lanka specializing in building and designing robust,' +
+    ' scalable and modern web platforms. ',
   siteKeywords:
-    'Brittany Chiang, Brittany, Chiang, bchiang7, software engineer, front-end engineer, web developer, javascript, northeastern',
-  siteUrl: 'https://brittanychiang.com',
+    'Sasitha Sonnadara, Sasitha, Sonnadara, wathmal, software engineer, full-stack engineer, front-end engineer, web developer, javascript,' +
+    ' node js, australia',
+  siteUrl: 'http://wathmal.xyz',
   siteLanguage: 'en_US',
-  googleAnalyticsID: 'UA-45666519-2',
-  googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
-  name: 'Brittany Chiang',
-  location: 'Boston, MA',
-  email: 'brittany.chiang@gmail.com',
-  github: 'https://github.com/bchiang7',
-  twitterHandle: '@bchiang7',
+  googleAnalyticsID: '',
+  googleVerification: '',
+  name: 'Sasitha Sonnadara',
+  location: 'Colombo, Sri Lanka',
+  email: 'sasithawathmal@gmail.com',
+  github: 'https://github.com/wathmal',
+  twitterHandle: '@wathmal',
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/wathmal',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://www.linkedin.com/in/wathmal',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://twitter.com/wathmal',
     },
   ],
 
@@ -41,7 +35,7 @@ module.exports = {
       name: 'About',
       url: '/#about',
     },
-    {
+    /*{
       name: 'Experience',
       url: '/#jobs',
     },
@@ -52,7 +46,7 @@ module.exports = {
     {
       name: 'Contact',
       url: '/#contact',
-    },
+    },*/
   ],
 
   navHeight: 100,
