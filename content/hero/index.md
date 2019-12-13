@@ -5,8 +5,8 @@ subtitle: 'I build things for your browser and bare-metal servers.'
 contactText: 'Get In Touch'
 ---
 
-I'm a software engineer and a full-stack developer based in Colombo, Sri Lanka specializing in building and designing
+I'm a software engineer and a full-stack developer based in Colombo, Sri Lanka specializing in developing
 robust, scalable and modern
-web platforms.
+web applications.
 
 Currently, I'm looking for opportunities in Australia.
