@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '2018-01-02'
 title: 'Cake Shop'
 cover: './cake_shop.png'
 github: ''
