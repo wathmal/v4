@@ -6,7 +6,7 @@ module.exports = {
   siteKeywords:
     'sasitha sonnadara, sasitha, sonnadara, wathmal, software engineer, full-stack engineer, front-end engineer, web developer, javascript,' +
     ' node js, react, australia',
-  siteUrl: 'http://wathmal.xyz',
+  siteUrl: 'https://wathmal.xyz',
   siteLanguage: 'en_US',
   googleAnalyticsID: '',
   googleVerification: '',
@@ -16,6 +16,14 @@ module.exports = {
   github: 'https://github.com/wathmal',
   twitterHandle: '@wathmal',
   socialMedia: [
+    {
+      name: 'WordPress',
+      url: 'https://onezerology.wordpress.com/',
+    },
+    {
+      name: 'Medium',
+      url: 'https://medium.com/@wathmal',
+    },
     {
       name: 'GitHub',
       url: 'https://github.com/wathmal',

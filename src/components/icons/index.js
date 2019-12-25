@@ -11,6 +11,8 @@ import IconLocation from './location';
 import IconStar from './star';
 import IconFork from './fork';
 import FormattedIcon from './formattedIcon';
+import IconWordPress from './wordpress';
+import IconMedium from './medium';
 
 export {
   IconLoader,
@@ -26,4 +28,6 @@ export {
   IconStar,
   IconFork,
   FormattedIcon,
+  IconWordPress,
+  IconMedium,
 };
