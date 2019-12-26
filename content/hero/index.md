@@ -1,5 +1,5 @@
 ---
-title: 'Hi, my name is "wathmal" aka'
+title: 'Hi, my name is "Wathmal" aka'
 name: 'Sasitha Sonnadara'
 subtitle: 'I build things for your browser and bare-metal servers.'
 contactText: 'Get In Touch'
