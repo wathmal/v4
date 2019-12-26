@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Sasitha Sonnadara | Software Engineer',
   siteDescription:
-    'Sasitha Sonnadara is a software engineer and a full-stack developer based in Colombo, Sri Lanka specializing in developing robust,' +
+    'Sasitha Sonnadara is a Software Engineer and a Full-stack Developer based in Colombo, Sri Lanka specializing in developing robust,' +
     ' scalable and modern web platforms. ',
   siteKeywords:
     'sasitha sonnadara, sasitha, sonnadara, wathmal, software engineer, full-stack engineer, front-end engineer, web developer, javascript,' +
@@ -17,16 +17,16 @@ module.exports = {
   twitterHandle: '@wathmal',
   socialMedia: [
     {
-      name: 'WordPress',
-      url: 'https://onezerology.wordpress.com/',
-    },
-    {
       name: 'Medium',
       url: 'https://medium.com/@wathmal',
     },
     {
       name: 'GitHub',
       url: 'https://github.com/wathmal',
+    },
+    {
+      name: 'WordPress',
+      url: 'https://onezerology.wordpress.com/',
     },
     {
       name: 'Linkedin',
@@ -58,9 +58,9 @@ module.exports = {
   ],
 
   navHeight: 100,
-  greenColor: '#64ffda',
-  navyColor: '#0a192f',
-  darkNavyColor: '#020c1b',
+  greenColor: '#03a87c',
+  navyColor: '#252c34',
+  darkNavyColor: '#1F252B',
 
   srConfig: (delay = 200) => ({
     origin: 'bottom',

@@ -2,22 +2,22 @@ const theme = {
   colors: {
     dark: '#000007',
     darkestNavy: '#01050b',
-    darkNavy: '#020c1b',
-    navy: '#0a192f',
-    lightNavy: '#172a45',
+    darkNavy: '#1F252B', // footer
+    navy: '#252c34', // top nav // background
+    lightNavy: '#383F46',
     darkGrey: '#333f58',
-    mediumGrey: '#2d3952',
+    mediumGrey: '#2d3952', // after line
     grey: '#4c5772',
     lightGrey: '#606a86',
-    slate: '#8892b0',
-    lightSlate: '#a8b2d1',
-    lightestSlate: '#ccd6f6',
+    slate: '#8c9ba3', // font color/ technologies / footer text
+    lightSlate: '#a8b2d1', // font color para
+    lightestSlate: '#ccd6f6', // font headings
     offWhite: '#dce7ff',
     white: '#e6f1ff',
     pink: '#FF647F',
     yellow: '#FFC464',
     orange: '#FF9E64',
-    green: '#64ffda',
+    green: '#03a87c', // Medium green
     blue: '#71AFFF',
     darkBlue: '#1D7FFC',
     highlight: 'rgba(41, 61, 90, 0.99)',
