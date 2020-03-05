@@ -1,17 +1,17 @@
 module.exports = {
   siteTitle: 'Sasitha Sonnadara | Software Engineer',
   siteDescription:
-    'Sasitha Sonnadara is a Software Engineer and a Full-stack Developer based in Colombo, Sri Lanka specializing in developing robust,' +
+    'Sasitha Sonnadara is a Software Engineer and a Full-stack Developer based in Melbourne, Australia specializing in developing robust,' +
     ' scalable and modern web platforms. ',
   siteKeywords:
     'sasitha sonnadara, sasitha, sonnadara, wathmal, software engineer, full-stack engineer, front-end engineer, web developer, javascript,' +
-    ' node js, react, australia',
+    ' node js, react, australia, sri lanka',
   siteUrl: 'https://wathmal.xyz',
   siteLanguage: 'en_US',
   googleAnalyticsID: '',
   googleVerification: '',
   name: 'Sasitha Sonnadara',
-  location: 'Colombo, Sri Lanka',
+  location: 'Melbourne, Australia',
   email: 'sasithawathmal@gmail.com',
   github: 'https://github.com/wathmal',
   twitterHandle: '@wathmal',
