@@ -12,7 +12,7 @@ skills:
   - AWS
 ---
 
-Hello! I'm Sasitha, a software engineer currently based in Colombo, Sri Lanka who enjoys building things that live on the internet. I develop web
+Hello! I'm Sasitha, a software engineer currently based in Melbourne, Australia who enjoys building things that live on the internet. I develop web
 platforms, SPAs and APIs on multiple technology stacks.
 
 Just after graduating from [University of Moratuwa](https://www.mrt.ac.lk/web/), I joined the engineering team at [Sysco Labs](https://syscolabs
