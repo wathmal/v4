@@ -3,7 +3,7 @@ date: '2019-12-01'
 title: 'Software Engineer'
 company: 'Sysco LABS'
 location: 'Colombo, Sri Lanka'
-range: 'Mar 2017 - Present'
+range: 'Mar 2017 - Jan 2020'
 url: 'https://syscolabs.lk/'
 ---
 

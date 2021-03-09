@@ -1,6 +1,6 @@
 ---
 date: '2016-04-01'
-title: 'Software Engineer Intern'
+title: 'Intern Software Engineer'
 company: 'Cake LABS'
 location: 'Colombo, Sri Lanka'
 range: 'Oct 2015 - Apr 2016'

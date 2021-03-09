@@ -1,8 +1,8 @@
 module.exports = {
-  siteTitle: 'Sasitha Sonnadara | Software Engineer',
+  siteTitle: 'Sasitha Sonnadara',
   siteDescription:
-    'Sasitha Sonnadara is a Software Engineer and a Full-stack Developer based in Melbourne, Australia specializing in developing robust,' +
-    ' scalable and modern web platforms. ',
+    'Sasitha Sonnadara is a Full-stack Developer based in Melbourne, Australia specializing in developing robust,' +
+    ' scalable and state-of-the-art cloud platforms.',
   siteKeywords:
     'sasitha sonnadara, sasitha, sonnadara, wathmal, software engineer, full-stack engineer, front-end engineer, web developer, javascript,' +
     ' node js, react, australia, sri lanka',
