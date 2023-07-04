@@ -1,9 +1,8 @@
 ---
-title: 'Hi, my name is "Wathmal" aka'
-name: 'Sasitha Sonnadara'
+title: "G'day! I'm"
+name: 'Sasitha / Sasi'
 subtitle: 'I build things for your browser, mobile and the cloud.'
 contactText: 'Get In Touch'
 ---
 
-I'm a Full-stack Developer based in Melbourne, Australia specializing in developing
-robust, scalable and state-of-the-art cloud platforms.
+A field-tested Full-Stack Engineer with a strong focus on frontend development and a passion for AI and ML. Based in Melbourne, I love creating robust digital solutions that drive growth and improve user experiences.
