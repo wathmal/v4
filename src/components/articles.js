@@ -39,8 +39,8 @@ const Articles = () => {
       <div
         style={{ alignItems: 'center', justifyContent: 'center', display: 'flex', width: '100%' }}>
         <iframe
-          width="560"
-          height="315"
+          width="840"
+          height="472"
           src="https://www.youtube.com/embed/videoseries?list=PLoiJ_gmQawWJvAQIfAWhBkrWRiNIL3FYU"
           title="YouTube video player"
           frameBorder="0"
