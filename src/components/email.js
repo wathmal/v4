@@ -1,68 +1,50 @@
-import React, { useState, useEffect } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { email } from '@config';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { theme, media } from '@styles';
-const { colors, fontSizes, fonts } = theme;
+import { email } from '@config';
+import { Side } from '@components';
 
-const StyledContainer = styled.div`
-  width: 40px;
-  position: fixed;
-  bottom: 0;
-  right: 40px;
-  color: ${colors.lightSlate};
-  ${media.desktop`right: 25px;`};
-  ${media.tablet`display: none;`};
-`;
 const StyledLinkWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+
   &:after {
     content: '';
     display: block;
     width: 1px;
     height: 90px;
     margin: 0 auto;
-    background-color: ${colors.lightSlate};
+    background-color: var(--light-slate);
+  }
+
+  a {
+    margin: 20px auto;
+    padding: 10px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    line-height: var(--fz-lg);
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-3px);
+    }
   }
 `;
-const StyledEmailLink = styled.a`
-  font-family: ${fonts.SFMono};
-  font-size: ${fontSizes.xs};
-  letter-spacing: 0.5px;
-  writing-mode: vertical-rl;
-  margin: 20px auto;
-  padding: 10px;
 
-  &:hover,
-  &:focus {
-    transform: translateY(-3px);
-  }
-`;
+const Email = ({ isHome }) => (
+  <Side isHome={isHome} orientation="right">
+    <StyledLinkWrapper>
+      <a href={`mailto:${email}`}>{email}</a>
+    </StyledLinkWrapper>
+  </Side>
+);
 
-const Email = () => {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), 2000);
-    return () => clearTimeout(timeout);
-  }, []);
-
-  return (
-    <StyledContainer>
-      <TransitionGroup component={null}>
-        {isMounted && (
-          <CSSTransition timeout={3000} classNames="fade">
-            <StyledLinkWrapper>
-              <StyledEmailLink href={`mailto:${email}`}>{email}</StyledEmailLink>
-            </StyledLinkWrapper>
-          </CSSTransition>
-        )}
-      </TransitionGroup>
-    </StyledContainer>
-  );
+Email.propTypes = {
+  isHome: PropTypes.bool,
 };
 
 export default Email;

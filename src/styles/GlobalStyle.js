@@ -1,146 +1,70 @@
 import { createGlobalStyle } from 'styled-components';
-import theme from './theme';
-import media from './media';
-import * as fontFamilies from './fonts';
-const { colors, fontSizes, fonts } = theme;
+import fonts from './fonts';
+import variables from './variables';
+import TransitionStyles from './TransitionStyles';
+import PrismStyles from './PrismStyles';
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fontFamilies.CalibreLightWOFF2}) format('woff2'),
-    url(${fontFamilies.CalibreLightWOFF}) format('woff'),
-    url(${fontFamilies.CalibreLightTTF}) format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fontFamilies.CalibreLightItalicWOFF2}) format('woff2'),
-    url(${fontFamilies.CalibreLightItalicWOFF}) format('woff'),
-    url(${fontFamilies.CalibreLightItalicTTF}) format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fontFamilies.CalibreRegularWOFF2}) format('woff2'),
-    url(${fontFamilies.CalibreRegularWOFF}) format('woff'),
-    url(${fontFamilies.CalibreRegularTTF}) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fontFamilies.CalibreRegularItalicWOFF2}) format('woff2'),
-    url(${fontFamilies.CalibreRegularItalicWOFF}) format('woff'),
-    url(${fontFamilies.CalibreRegularItalicTTF}) format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fontFamilies.CalibreMediumWOFF2}) format('woff2'),
-    url(${fontFamilies.CalibreMediumWOFF}) format('woff'),
-    url(${fontFamilies.CalibreMediumTTF}) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fontFamilies.CalibreMediumItalicWOFF2}) format('woff2'),
-    url(${fontFamilies.CalibreMediumItalicWOFF}) format('woff'),
-    url(${fontFamilies.CalibreMediumItalicTTF}) format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fontFamilies.CalibreSemiboldWOFF2}) format('woff2'),
-    url(${fontFamilies.CalibreSemiboldWOFF}) format('woff'),
-    url(${fontFamilies.CalibreSemiboldTTF}) format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: url(${fontFamilies.CalibreSemiboldItalicWOFF2}) format('woff2'),
-    url(${fontFamilies.CalibreSemiboldItalicWOFF}) format('woff'),
-    url(${fontFamilies.CalibreSemiboldItalicTTF}) format('truetype');
-    font-weight: 600;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fontFamilies.SFMonoRegularWOFF2}) format('woff2'),
-    url(${fontFamilies.SFMonoRegularWOFF}) format('woff'),
-    url(${fontFamilies.SFMonoRegularTTF}) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fontFamilies.SFMonoRegularItalicWOFF2}) format('woff2'),
-    url(${fontFamilies.SFMonoRegularItalicWOFF}) format('woff'),
-    url(${fontFamilies.SFMonoRegularItalicTTF}) format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fontFamilies.SFMonoMediumWOFF2}) format('woff2'),
-    url(${fontFamilies.SFMonoMediumWOFF}) format('woff'),
-    url(${fontFamilies.SFMonoMediumTTF}) format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fontFamilies.SFMonoMediumItalicWOFF2}) format('woff2'),
-    url(${fontFamilies.SFMonoMediumItalicWOFF}) format('woff'),
-    url(${fontFamilies.SFMonoMediumItalicTTF}) format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fontFamilies.SFMonoSemiboldWOFF2}) format('woff2'),
-    url(${fontFamilies.SFMonoSemiboldWOFF}) format('woff'),
-    url(${fontFamilies.SFMonoSemiboldTTF}) format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: auto;
-  }
-  @font-face {
-    font-family: 'SF Mono';
-    src: url(${fontFamilies.SFMonoSemiboldItalicWOFF2}) format('woff2'),
-    url(${fontFamilies.SFMonoSemiboldItalicWOFF}) format('woff'),
-    url(${fontFamilies.SFMonoSemiboldItalicTTF}) format('truetype');
-    font-weight: 600;
-    font-style: italic;
-    font-display: auto;
-  }
+  ${fonts};
+  ${variables};
 
   html {
     box-sizing: border-box;
     width: 100%;
+    scroll-behavior: smooth;
   }
 
   *,
   *:before,
   *:after {
     box-sizing: inherit;
+  }
+
+  ::selection {
+    background-color: var(--lightest-navy);
+    color: var(--lightest-slate);
+  }
+
+  /* Provide basic, default focus styles.*/
+  :focus {
+    outline: 2px dashed var(--green);
+    outline-offset: 3px;
+  }
+
+  /*
+    Remove default focus styles for mouse users ONLY if
+    :focus-visible is supported on this platform.
+  */
+  :focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: 0px;
+  }
+
+  /*
+    Optionally: If :focus-visible is supported on this
+    platform, provide enhanced focus styles for keyboard
+    focus.
+  */
+  :focus-visible {
+    outline: 2px dashed var(--green);
+    outline-offset: 3px;
+  }
+
+  /* Scrollbar Styles */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--dark-slate) var(--navy);
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--navy);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--dark-slate);
+    border: 3px solid var(--navy);
+    border-radius: 10px;
   }
 
   body {
@@ -150,39 +74,34 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${colors.navy};
-    color: ${colors.slate};
+    background-color: var(--navy);
+    color: var(--slate);
+    font-family: var(--font-sans);
+    font-size: var(--fz-xl);
     line-height: 1.3;
-    font-family: ${fonts.Calibre};
-    font-size: ${fontSizes.xl};
-    ${media.phablet`font-size: ${fontSizes.lg};`}
+
+    @media (max-width: 480px) {
+      font-size: var(--fz-lg);
+    }
 
     &.hidden {
       overflow: hidden;
     }
+
     &.blur {
       overflow: hidden;
-      #root > #content > * {
+
+      header {
+        background-color: transparent;
+      }
+
+      #content > * {
         filter: blur(5px) brightness(0.7);
-        transition: ${theme.transition};
+        transition: var(--transition);
         pointer-events: none;
         user-select: none;
       }
     }
-  }
-
-  ::selection {
-    background-color: ${colors.highlight};
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-weight: 600;
-    color: ${colors.white};
-    margin: 0 0 10px 0;
   }
 
   #root {
@@ -192,11 +111,133 @@ const GlobalStyle = createGlobalStyle`
     grid-template-columns: 100%;
   }
 
+  main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 200px 150px;
 
-  img {
+    @media (max-width: 1080px) {
+      padding: 200px 100px;
+    }
+    @media (max-width: 768px) {
+      padding: 150px 50px;
+    }
+    @media (max-width: 480px) {
+      padding: 125px 25px;
+    }
+
+    &.fillHeight {
+      padding: 0 150px;
+
+      @media (max-width: 1080px) {
+        padding: 0 100px;
+      }
+      @media (max-width: 768px) {
+        padding: 0 50px;
+      }
+      @media (max-width: 480px) {
+        padding: 0 25px;
+      }
+    }
+  }
+
+  section {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1000px;
+
+    @media (max-width: 768px) {
+      padding: 80px 0;
+    }
+
+    @media (max-width: 480px) {
+      padding: 60px 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    color: var(--lightest-slate);
+    line-height: 1.1;
+  }
+
+  .big-heading {
+    margin: 0;
+    font-size: clamp(40px, 8vw, 80px);
+  }
+
+  .medium-heading {
+    margin: 0;
+    font-size: clamp(40px, 8vw, 60px);
+  }
+
+  .numbered-heading {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0 40px;
+    width: 100%;
+    font-size: clamp(26px, 5vw, var(--fz-heading));
+    white-space: nowrap;
+
+    &:before {
+      position: relative;
+      bottom: 4px;
+      counter-increment: section;
+      content: '0' counter(section) '.';
+      margin-right: 10px;
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+      font-weight: 400;
+
+      @media (max-width: 480px) {
+        margin-bottom: -3px;
+        margin-right: 5px;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: relative;
+      top: -5px;
+      width: 300px;
+      height: 1px;
+      margin-left: 20px;
+      background-color: var(--lightest-navy);
+
+      @media (max-width: 1080px) {
+        width: 200px;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      @media (max-width: 600px) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  img,
+  svg,
+  .gatsby-image-wrapper {
     width: 100%;
     max-width: 100%;
     vertical-align: middle;
+  }
+
+  img[alt=""],
+  img:not([alt]) {
+    filter: blur(5px);
   }
 
   svg {
@@ -204,6 +245,10 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     fill: currentColor;
     vertical-align: middle;
+
+    &.feather {
+      fill: none;
+    }
   }
 
   a {
@@ -212,13 +257,15 @@ const GlobalStyle = createGlobalStyle`
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
-    transition: ${theme.transition};
-    cursor: pointer;
+    transition: var(--transition);
 
     &:hover,
     &:focus {
-      color: ${colors.green};
-      outline: 0;
+      color: var(--green);
+    }
+
+    &.inline-link {
+      ${({ theme }) => theme.mixins.inlineLink};
     }
   }
 
@@ -226,11 +273,6 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     border: 0;
     border-radius: 0;
-
-    &:focus,
-    &:active {
-      outline-color: ${colors.blue};
-    }
   }
 
   input, textarea {
@@ -239,8 +281,6 @@ const GlobalStyle = createGlobalStyle`
 
     &:focus {
       outline: 0;
-    }
-    &::placeholder {
     }
     &:focus,
     &:active {
@@ -252,58 +292,160 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     margin: 0 0 15px 0;
+
+    &:last-child,
+    &:last-of-type {
+      margin: 0;
+    }
+
+    & > a {
+      ${({ theme }) => theme.mixins.inlineLink};
+    }
+
+    & > code {
+      background-color: var(--light-navy);
+      color: var(--white);
+      font-size: var(--fz-sm);
+      border-radius: var(--border-radius);
+      padding: 0.3em 0.5em;
+    }
   }
 
-  ul, ol {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  ul {
+    &.fancy-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      font-size: var(--fz-lg);
+      li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        &:before {
+          content: '▹';
+          position: absolute;
+          left: 0;
+          color: var(--green);
+        }
+      }
+    }
+  }
+
+  blockquote {
+    border-left-color: var(--green);
+    border-left-style: solid;
+    border-left-width: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 1.5rem;
+
+    p {
+      font-style: italic;
+      font-size: 24px;
+    }
+  }
+
+  hr {
+    background-color: var(--lightest-navy);
+    height: 1px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    margin: 1rem;
+  }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: var(--fz-md);
+  }
+
+  .skip-to-content {
+    ${({ theme }) => theme.mixins.button};
+    position: absolute;
+    top: auto;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -99;
+
+    &:hover,
+    &:focus {
+      background-color: var(--green);
+      color: var(--navy);
+      top: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+      overflow: auto;
+      z-index: 99;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+
+  #logo {
+    color: var(--green);
+  }
+
+  .overline {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-md);
+    font-weight: 400;
+  }
+
+  .subtitle {
+    color: var(--green);
+    margin: 0 0 20px 0;
+    font-size: var(--fz-md);
+    font-family: var(--font-mono);
+    font-weight: 400;
+    line-height: 1.5;
+    @media (max-width: 1080px) {
+      font-size: var(--fz-sm);
+    }
+    @media (max-width: 768px) {
+      font-size: var(--fz-xs);
+    }
+
+    a {
+      ${({ theme }) => theme.mixins.inlineLink};
+      line-height: 1.5;
+    }
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    color: var(--green);
+
+    .arrow {
+      display: block;
+      margin-right: 10px;
+      padding-top: 4px;
+    }
+
+    a {
+      ${({ theme }) => theme.mixins.inlineLink};
+      font-family: var(--font-mono);
+      font-size: var(--fz-sm);
+      font-weight: 600;
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
   }
 
   .gatsby-image-outer-wrapper {
     height: 100%;
   }
 
-  .fadeup-enter {
-    opacity: 0.01;
-    transform: translateY(20px);
-    transition: opacity 300ms ${theme.easing}, transform 300ms ${theme.easing};
-  }
+  ${TransitionStyles};
 
-  .fadeup-enter-active {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: opacity 300ms ${theme.easing}, transform 300ms ${theme.easing};
-  }
-
-  .fadedown-enter {
-    opacity: 0.01;
-    transform: translateY(-20px);
-    transition: opacity 300ms ${theme.easing}, transform 300ms ${theme.easing};
-  }
-
-  .fadedown-enter-active {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: opacity 300ms ${theme.easing}, transform 300ms ${theme.easing};
-  }
-
-  .fade-enter {
-    opacity: 0.01;
-    transition: opacity 1000ms ${theme.easing};
-  }
-
-  .fade-enter-active {
-    opacity: 1;
-    transition: opacity 1000ms ${theme.easing};
-  }
-
-  .overline {
-    color: ${colors.green};
-    font-family: ${fonts.SFMono};
-    font-size: ${fontSizes.md};
-    font-weight: normal;
-  }
+  ${PrismStyles};
 `;
 
 export default GlobalStyle;
