@@ -11,5 +11,5 @@ company: 'University of Moratuwa'
 show: 'true'
 ---
 
-Project to train and recognize Sinahala characters based on LeNet convolution neural network and came up with 91% accuracy in recognizing
+Project to train and recognize Sinhala characters based on LeNet convolution neural network and came up with 91% accuracy in recognizing
 untrained characters. Done for my Machine Learning course.
