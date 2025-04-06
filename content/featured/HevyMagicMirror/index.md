@@ -1,7 +1,7 @@
 ---
 date: '2024-10-01'
 title: 'Hevy MagicMirror Module'
-cover: './muscle_split.png'
+cover: './hevy_featured.png'
 github: 'https://github.com/wathmal/MMM-Hevy'
 external: ''
 tech:
