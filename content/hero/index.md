@@ -1,6 +1,6 @@
 ---
 title: "G'day! I'm"
-name: 'Sasitha / Sasi'
+name: 'Sasi'
 subtitle: 'I build things for your browser, mobile and the cloud.'
 contactText: 'Get In Touch'
 ---
