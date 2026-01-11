@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Head, Loader, Nav, Social, Email, Footer } from '@components';
+import { Head, Nav, Social, Email, Footer } from '@components';
 import styled from 'styled-components';
 import { GlobalStyle, theme } from '@styles';
 const { colors, fontSizes, fonts } = theme;
@@ -51,7 +51,19 @@ const StyledContent = styled.div`
 `;
 
 const Layout = ({ children, location }) => {
-  const [isLoading, setIsLoading] = useState(location.pathname === '/');
+  const { site } = useStaticQuery(graphql`
+    query LayoutQuery {
+      site {
+        siteMetadata {
+          title
+          siteUrl
+          description
+        }
+      }
+    }
+  `);
+
+  const isLoading = location.pathname === '/';
   const [githubInfo, setGitHubInfo] = useState({
     stars: null,
     forks: null,
@@ -86,36 +98,21 @@ const Layout = ({ children, location }) => {
   }, [isLoading]);
 
   return (
-    <StaticQuery
-      query={graphql`
-        query LayoutQuery {
-          site {
-            siteMetadata {
-              title
-              siteUrl
-              description
-            }
-          }
-        }
-      `}
-      render={({ site }) => (
-        <div id="root">
-          <Head metadata={site.siteMetadata} />
+    <div id="root">
+      <Head metadata={site.siteMetadata} />
 
-          <GlobalStyle />
+      <GlobalStyle />
 
-          <SkipToContent href="#content">Skip to Content</SkipToContent>
+      <SkipToContent href="#content">Skip to Content</SkipToContent>
 
-          <StyledContent id="content">
-            <Nav location={location} />
-            <Social />
-            <Email />
-            {children}
-            <Footer githubInfo={githubInfo} />
-          </StyledContent>
-        </div>
-      )}
-    />
+      <StyledContent id="content">
+        <Nav location={location} />
+        <Social />
+        <Email />
+        {children}
+        <Footer githubInfo={githubInfo} />
+      </StyledContent>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@
   brittanychiang.com - v4
 </h1>
 <p align="center">
-  The fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
   Previous iterations:
@@ -29,7 +29,7 @@
    npm install -g gatsby-cli
    ```
 
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+2. Install and use the correct version of Node (Node 18+) using [NVM](https://github.com/nvm-sh/nvm)
 
    ```sh
    nvm install
@@ -38,6 +38,7 @@
 3. Install dependencies
 
    ```sh
+   brew install vips #if libvips fails in M series Macs
    yarn
    ```
 

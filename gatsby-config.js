@@ -1,6 +1,7 @@
 const config = require('./src/config');
 
 module.exports = {
+  trailingSlash: `always`,
   siteMetadata: {
     title: config.siteTitle,
     siteUrl: config.siteUrl,
@@ -9,6 +10,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,

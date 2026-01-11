@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import sr from '@utils/sr';
 import { srConfig, github } from '@config';
 import styled from 'styled-components';
@@ -53,12 +53,16 @@ const StyledPic = styled.div`
   ${media.tablet`margin: 60px auto 0;`};
   ${media.phablet`width: 70%;`};
 `;
-const StyledAvatar = styled(Img)`
+const StyledAvatar = styled(GatsbyImage)`
   position: relative;
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1);
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
+
+  img {
+    border-radius: ${theme.borderRadius};
+  }
 `;
 const StyledAvatarLink = styled.a`
   ${mixins.boxShadow};
@@ -108,6 +112,7 @@ const StyledAvatarLink = styled.a`
 const About = ({ data }) => {
   const { frontmatter, html } = data[0].node;
   const { title, skills, avatar } = frontmatter;
+  const avatarImage = getImage(avatar);
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
@@ -123,7 +128,7 @@ const About = ({ data }) => {
         </StyledContent>
         <StyledPic>
           <StyledAvatarLink href={github}>
-            <StyledAvatar fluid={avatar.childImageSharp.fluid} alt="Avatar" />
+            {avatarImage && <StyledAvatar image={avatarImage} alt="Avatar" />}
           </StyledAvatarLink>
         </StyledPic>
       </StyledFlexContainer>
