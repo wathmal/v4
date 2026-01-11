@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { IconGitHub, IconExternal } from '@components/icons';
@@ -104,11 +104,10 @@ const StyledLinkWrapper = styled.div`
     }
   }
 `;
-const StyledFeaturedImg = styled(Img)`
+const StyledFeaturedImg = styled(GatsbyImage)`
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
-  border-radius: ${theme.borderRadius};
   position: relative;
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1) brightness(90%);
@@ -118,6 +117,10 @@ const StyledFeaturedImg = styled(Img)`
     height: 100%;
     filter: grayscale(100%) contrast(1) brightness(80%);
   `};
+
+  img {
+    border-radius: ${theme.borderRadius};
+  }
 `;
 const StyledImgContainer = styled.a`
   ${mixins.boxShadow};
@@ -221,6 +224,7 @@ const Featured = ({ data }) => {
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover } = frontmatter;
+            const coverImage = getImage(cover);
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -273,7 +277,7 @@ const Featured = ({ data }) => {
                   href={external ? external : github ? github : '#'}
                   target="_blank"
                   rel="nofollow noopener noreferrer">
-                  <StyledFeaturedImg fluid={cover.childImageSharp.fluid} />
+                  {coverImage && <StyledFeaturedImg image={coverImage} alt={title} />}
                 </StyledImgContainer>
               </StyledProject>
             );
