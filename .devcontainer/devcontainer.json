@@ -1,0 +1,52 @@
+{
+  "name": "Gatsby v5 Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  // Forward Gatsby dev server and GraphiQL ports
+  "forwardPorts": [8000, 9000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Gatsby Dev Server",
+      "onAutoForward": "notify"
+    },
+    "9000": {
+      "label": "GraphiQL",
+      "onAutoForward": "silent"
+    }
+  },
+
+  // Install dependencies after container is created
+  "postCreateCommand": "yarn install",
+
+  // Set environment variables
+  "containerEnv": {
+    "GATSBY_TELEMETRY_DISABLED": "1"
+  },
+
+  // Configure VS Code/Cursor extensions and settings
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "styled-components.vscode-styled-components"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        },
+        "eslint.validate": [
+          "javascript",
+          "javascriptreact"
+        ]
+      }
+    }
+  },
+
+  // Use 'node' user instead of root
+  "remoteUser": "node"
+}
