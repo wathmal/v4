@@ -1,18 +1,14 @@
 ---
-date: '2020-02-28'
+date: '2020-03-01'
 title: 'Software Engineer'
 company: 'Tally Group'
 location: 'Melbourne, Australia'
-range: 'Feb 2020 - Present'
+range: 'Mar 2020 - Nov 2023'
 url: 'https://www.tallygroup.com.au/'
 ---
 
-- Architected and developed a white-labelled, cross-platform mobile app solution for electricity users, providing usage statistics, insights, and user transactions. This solution was implemented in the "On by EnergyAustralia" mobile app.
-- Designed and implemented data warehousing pipelines for the “On by EnergyAustralia” platform, integrating 3rd party data using AWS technologies.
-
-[//]: # (- Developed backend processes to do Billing Reconciliation and Settlements for Commercial and Industrial energy retailers.)
-- Contributed to the development of the EnergyAustralia Large Business Portal, including progressive purchasing and site management capabilities.
-- Developed new energy plan segments on Energy Australia's digital innovation platform.
-- Managed an offshore team to handle outsourcing work on a white-labelled telco platform which is used by several Australian telco retailers.
-- Setup CICD pipelines for the projects using Azure pipelines are ARM templates.
-- Engaged in client-facing activities, including meetings, preparation of Statements of Work (SOWs), and client demos.
+- **Electricity Self-Service Mobile App**: Architected and developed a white-labelled, cross-platform mobile app for electricity users using React Native, providing usage statistics, solar exports, cost saving insights and transactions with optimisations for data-heavy usage visualisations. Shipped as part of the "On by EnergyAustralia" digital suite.
+- **Okta Integration**: Spearheaded the migration of the "On by EnergyAustralia" platform to Okta authentication, decommissioning a custom-built auth service and delivering enhanced security standards. Developed solutions across React Native, React & Next.js web apps, and a .NET API in collaboration with Okta engineers.
+- **Electricity Self-Service Web Platform**: Developed user sign-up journey segments for new electricity plans in the "On by EnergyAustralia" web platform using React.js and Next.js, with integrations to the API, CRM and analytics.
+- **Data Lake and Reporting**: Designed and implemented data ingestion ETL jobs for the "On by EnergyAustralia" data lake using Webhooks, AWS Lambda & AWS Glue. Built analytical reports with PowerBI & AWS Athena for SLA, compliance monitoring and customer engagement.
+- **CI/CD Pipelines**: Set up CI/CD pipelines using Azure Pipelines, ARM templates and Azure Secrets for config management. Migrated all existing build pipelines from BuildKite to Azure DevOps.

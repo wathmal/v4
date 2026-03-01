@@ -2,14 +2,16 @@
 title: 'About Me'
 avatar: './me.jpg'
 skills:
-  - JavaScript (ES6+)
-  - HTML & (S)CSS
-  - React
-  - React Native
+  - TypeScript
+  - React & React Native
+  - Expo & Expo EAS
   - Node.js
-  - Express
-  - Docker
-  - AWS & Azure
+  - C# & .NET Core
+  - Tailwind CSS
+  - Serverless & Microservices
+  - Azure & GCP
+  - LLMs & Agentic Coding
+  - PostgreSQL & Azure SQL
 ---
 
 G'day! I'm Sasitha, a Central Coast, NSW based software engineer with a passion for creating digital solutions that make a difference. My expertise spans across developing cloud platforms, mobile apps, and APIs using diverse technology stacks.
