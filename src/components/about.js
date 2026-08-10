@@ -47,8 +47,8 @@ const Skill = styled.li`
 `;
 const StyledPic = styled.div`
   position: relative;
-  width: 40%;
-  max-width: 300px;
+  width: 45%;
+  max-width: 380px;
   margin-left: 60px;
   ${media.tablet`margin: 60px auto 0;`};
   ${media.phablet`width: 70%;`};
